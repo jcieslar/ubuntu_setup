@@ -10,9 +10,11 @@ install git
 install skype
 install vlc
 install dropbox
-install wine
 
 #git-clone git@github.com:jcieslar/dotfiles.git ~/kuba-test/super
 
-source ../private.sh
+if [ -f ../private.sh ]; then
+  echo 'Installing private...'
+  source ../private.sh
+fi
 	

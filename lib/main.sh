@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # params:
-# * name of program
+#   - name of program
 function install { 
   if ! type $1; then
     echo "installing: $1..."
@@ -13,13 +13,21 @@ function install {
 }
 
 # params:
-# * repo url
-# * path
-function add-repo {
+#   - repo url
+#   - path
+function git-clone {
   if [ ! -d $2 ]; then
-    mkdir $2
+    mkdir -p $2
   fi
   cd $2
   git clone $1
   cd
+}
+
+function add-repo {
+  sudo add-apt-repository "$1"
+}
+
+function update-repo {
+  sudo apt-get update
 }

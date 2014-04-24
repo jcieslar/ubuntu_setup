@@ -10,6 +10,9 @@ install git
 install skype
 install vlc
 install dropbox
+install exuberant-ctags
+install ncurses-term
+install curl
 
 #git-clone git@github.com:jcieslar/dotfiles.git ~/kuba-test/super
 
@@ -17,4 +20,4 @@ if [ -f ../private.sh ]; then
   echo 'Installing private...'
   source ../private.sh
 fi
-	
+

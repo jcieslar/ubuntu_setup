@@ -33,3 +33,11 @@ add-repo() {
 update-repo() {
   sudo apt-get update
 }
+
+unset_fun() {
+  for fun in "${PRIVATE_FUNCTIONS[*]}"
+  do
+    unset $fun
+  done
+}
+

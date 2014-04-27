@@ -1,8 +1,10 @@
 #!/bin/bash
 
+PRIVATE_FUNCTIONS=(install git-clone add-repo update-repo)
+
 # params:
 #   - name of program
-function install { 
+install() {
   if ! type $1; then
     echo "installing: $1..."
     sudo apt-get install $1
@@ -15,7 +17,7 @@ function install {
 # params:
 #   - repo url
 #   - path
-function git-clone {
+git-clone() {
   if [ ! -d $2 ]; then
     mkdir -p $2
   fi
@@ -24,10 +26,10 @@ function git-clone {
   cd
 }
 
-function add-repo {
+add-repo() {
   sudo add-apt-repository "$1"
 }
 
-function update-repo {
+update-repo() {
   sudo apt-get update
 }

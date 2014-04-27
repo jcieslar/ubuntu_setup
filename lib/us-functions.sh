@@ -4,8 +4,10 @@ MAIN=~/ubuntu_setup/lib/main.sh
 
 us-install() {
   source $MAIN
-  install $1
-  echo "install $1" >> ~/ubuntu_setup/private.sh
+  if ! is_installed $1; then
+    install $1
+    echo "install $1" >> ~/ubuntu_setup/private.sh
+  fi
   unset_fun
 }
 
@@ -14,4 +16,8 @@ unset_fun() {
   do
     unset $fun
   done
+}
+
+is_installed() {
+  grep -q -r $1 ~/ubuntu_setup/private.sh
 }

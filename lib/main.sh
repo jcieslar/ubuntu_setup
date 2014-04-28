@@ -7,7 +7,7 @@ PRIVATE_FUNCTIONS=(install git-clone add-repo update-repo)
 install() {
   if ! type $1; then
     echo "installing: $1..."
-    sudo apt-get install $1
+    sudo apt-get -y install $1
     echo 'finished'
   else
     echo "$1 is installed"
@@ -32,6 +32,10 @@ add-repo() {
 
 update-repo() {
   sudo apt-get update
+}
+
+add-key() {
+  wget -O - $1 | apt-key add -
 }
 
 unset_fun() {

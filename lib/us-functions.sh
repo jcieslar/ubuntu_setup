@@ -8,6 +8,8 @@ us-install() {
   if ! is_installed $1; then
     install $1
     echo "install $1" >> $PRIVATE_PATH
+  else
+    echo "$1 is installed"
   fi
   unset_fun
 }

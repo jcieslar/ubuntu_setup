@@ -27,7 +27,9 @@ git-clone() {
 }
 
 add-repo() {
-  sudo add-apt-repository "$1"
+  if ! type $2; then
+    sudo add-apt-repository "$1"
+  fi
 }
 
 update-repo() {
@@ -35,7 +37,9 @@ update-repo() {
 }
 
 add-key() {
-  wget -O - $1 | apt-key add -
+  if ! type $2; then
+    wget -O - $1 | apt-key add -
+  fi
 }
 
 unset_fun() {

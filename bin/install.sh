@@ -3,9 +3,9 @@
 source ~/.bashrc
 source ../lib/main.sh
 
-add-repo "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
+#add-repo "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
 
-update-repo
+#update-repo
 
 install vim
 install git

@@ -1,4 +1,6 @@
 #!/bin/bash
+
+source ~/.bashrc
 source ../lib/main.sh
 
 add-repo "deb http://archive.canonical.com/ $(lsb_release -sc) partner"
@@ -9,12 +11,9 @@ install vim
 install git
 install curl
 
-install exuberant-ctags
-install ncurses-term
-
-#git-clone git@github.com:jcieslar/dotfiles.git ~/kuba-test/super
-
 source ../resources/media.sh
+source ../resources/tools.sh
+source ../resources/dotfiles_jcieslar.sh
 source ../resources/ruby_on_rails.sh
 
 if [ -f ../private.sh ]; then

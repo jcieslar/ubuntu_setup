@@ -7,7 +7,7 @@ PRIVATE_FUNCTIONS=(install git-clone add-repo update-repo)
 install() {
   if ! type $1; then
     echo "installing: $1..."
-    sudo apt-get -y install $1
+    sudo apt-get -y --force-yes install $1
     echo 'finished'
   else
     echo "$1 is installed"

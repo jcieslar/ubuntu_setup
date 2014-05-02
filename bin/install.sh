@@ -15,6 +15,8 @@ source ../resources/media.sh
 source ../resources/tools.sh
 source ../resources/dotfiles_jcieslar.sh
 source ../resources/ruby_on_rails.sh
+source ../resources/java.sh
+source ../resources/databases.sh
 
 if [ -f ../private.sh ]; then
   echo 'Installing private...'

@@ -28,6 +28,8 @@ install ubuntu-restricted-extras
 install wine
 install spotify-client
 install steam
+install unity-webapps-twitter
+# install screencloud -> TODO fix me
 
 # install calendar-indicator
 # install my-weather-indicator

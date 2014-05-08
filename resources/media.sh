@@ -39,14 +39,11 @@ wget -q -O - https://fixubuntu.com/fixubuntu.sh | bash
 
 # install calendar-indicator
 # install my-weather-indicator
+
 # silverlight
 install pipelight-multi
 sudo pipelight-plugin --enable silverlight
 sudo pipelight-plugin --enable widevine
-
-# Disable shopping suggestions
-gsettings set com.canonical.Unity.Lenses disabled-scopes "['more_suggestions-amazon.scope',
-  'more_suggestions-u1ms.scope', 'more_suggestions-populartracks.scope', 'music-musicstore.scope', 'more_suggestions-ebay.scope', 'more_suggestions-ubuntushop.scope', 'more_suggestions-skimlinks.scope']"
 
 # http://www.webupd8.org/2014/04/10-things-to-do-after-installing-ubuntu.html
 # http://itsfoss.com/things-to-do-after-installing-ubuntu-14-04/

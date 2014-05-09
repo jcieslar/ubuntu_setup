@@ -49,3 +49,19 @@ unset_fun() {
   done
 }
 
+# params:
+#   * project dir
+#   * ruby version
+
+install-gems() {
+  if [ -d "$1" ]; then
+    cd $1
+    if [ ! -f "$1/.ruby-version" ]; then
+      rbenv local $2
+      gem install bundler
+      rbenv rehash
+    fi
+    bundle
+    ruby -v
+  fi
+}

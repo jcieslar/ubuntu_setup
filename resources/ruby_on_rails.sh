@@ -21,6 +21,8 @@ if ! type rbenv; then
   curl -fsSL https://gist.github.com/mislav/a18b9d7f0dc5b9efc162.txt | rbenv install --patch 2.1.1
   rbenv global 2.1.1
   ruby -v
+  rbenv install 1.9.3-p545
+  rbenv install 2.0.0-p451
 
   echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 fi
@@ -28,3 +30,6 @@ fi
 # nokogiri
 install libxslt-dev
 install libxml2-dev
+
+# capybara-webkit
+install libqtwebkit-dev

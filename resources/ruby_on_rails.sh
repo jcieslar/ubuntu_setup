@@ -10,6 +10,18 @@
 #
 #rvm install ruby-1.9.3-p545
 
+# rbenv build
+install autoconf
+install bison
+install build-essential
+install libssl-dev
+install libyaml-dev
+install libreadline6
+install libreadline6-dev
+install zlib1g
+install zlib1g-dev
+install libreadline-dev
+
 if ! type rbenv; then
   git clone git://github.com/sstephenson/rbenv.git ~/.rbenv
   echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
@@ -22,9 +34,13 @@ if ! type rbenv; then
   rbenv global 2.1.1
   ruby -v
   rbenv install 1.9.3-p545
-  rbenv install 2.0.0-p451
+  rbenv install 2.0.0-p481
 
   echo "gem: --no-ri --no-rdoc" > ~/.gemrc
+
+#  cd ~/.rbenv/plugins/ruby-build
+#  pull master
+#  cd
 fi
 
 # nokogiri
@@ -33,3 +49,11 @@ install libxml2-dev
 
 # capybara-webkit
 install libqtwebkit-dev
+
+# rmagick
+install imagemagick
+install libmagickwand-dev
+
+# javascript runtime
+install nodejs
+install npm

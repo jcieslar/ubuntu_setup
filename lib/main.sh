@@ -65,3 +65,9 @@ install-gems() {
     ruby -v
   fi
 }
+
+postgres-db() {
+  sudo su -c "createuser $1 --superuser" -- postgres
+  bundle exec rake db:create
+}
+

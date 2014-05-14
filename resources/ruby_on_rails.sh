@@ -57,3 +57,8 @@ install libmagickwand-dev
 # javascript runtime
 install nodejs
 install npm
+
+# prax like a pow
+# sudo git clone git://github.com/ysbaddaden/prax.git /opt/prax
+# cd /opt/prax/
+# ./bin/prax install

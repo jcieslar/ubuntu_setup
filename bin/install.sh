@@ -7,7 +7,9 @@ source ../lib/main.sh
 
 #update-repo
 
-install vim
+sudo apt-get update && sudo apt-get upgrade
+
+install vim-gtk
 install git
 install curl
 
@@ -17,6 +19,7 @@ source ../resources/dotfiles_jcieslar.sh
 source ../resources/ruby_on_rails.sh
 source ../resources/java.sh
 source ../resources/databases.sh
+source ../resources/settings.sh
 
 if [ -f ../private.sh ]; then
   echo 'Installing private...'

@@ -38,6 +38,10 @@ if ! type rbenv; then
 
   echo "gem: --no-ri --no-rdoc" > ~/.gemrc
 
+  # https://github.com/ianheggie/rbenv-binstubs
+  cd ~/.rbenv/plugins
+  git clone https://github.com/ianheggie/rbenv-binstubs.git
+
 #  cd ~/.rbenv/plugins/ruby-build
 #  pull master
 #  cd

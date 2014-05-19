@@ -59,6 +59,8 @@ install-gems() {
     if [ ! -f "$1/.ruby-version" ]; then
       rbenv local $2
       gem install bundler
+      # /rbenv-binstubs
+      bundle install --binstubs .bundle/bin
       rbenv rehash
     fi
     bundle

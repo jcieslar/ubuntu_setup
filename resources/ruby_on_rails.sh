@@ -59,8 +59,10 @@ install imagemagick
 install libmagickwand-dev
 
 # javascript runtime
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
 install nodejs
-install npm
+install npm install npm -g
 
 # prax like a pow
 # sudo git clone git://github.com/ysbaddaden/prax.git /opt/prax

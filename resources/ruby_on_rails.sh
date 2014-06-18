@@ -64,6 +64,15 @@ sudo apt-get update
 install nodejs
 install npm install npm -g
 
+# phantomjs
+cd /usr/local/share
+sudo wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-1.9.7-linux-x86_64.tar.bz2
+sudo tar xjf phantomjs-1.9.7-linux-x86_64.tar.bz2
+sudo ln -s /usr/local/share/phantomjs-1.9.7-linux-x86_64/bin/phantomjs /usr/local/share/phantomjs
+sudo ln -s /usr/local/share/phantomjs-1.9.7-linux-x86_64/bin/phantomjs /usr/local/bin/phantomjs
+sudo ln -s /usr/local/share/phantomjs-1.9.7-linux-x86_64/bin/phantomjs /usr/bin/phantomjs
+cd
+
 # prax like a pow
 # sudo git clone git://github.com/ysbaddaden/prax.git /opt/prax
 # cd /opt/prax/

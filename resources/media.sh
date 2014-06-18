@@ -33,6 +33,7 @@ install spotify-client
 install steam
 install compizconfig-settings-manager
 install unity-webapps-twitter
+install calibre
 # Disable online searches from dash:
 wget -q -O - https://fixubuntu.com/fixubuntu.sh | bash
 # install screencloud -> TODO fix me

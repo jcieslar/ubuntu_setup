@@ -13,9 +13,15 @@ if type spotify; then
   sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
 fi
 
+
+# Skype
+sudo dpkg --add-architecture i386
+sudo apt-get install gdebi
+wget download.skype.com/linux/skype-ubuntu-precise_4.3.0.37-1_i386.deb
+sudo gdebi skype-ubuntu-precise_4.3.0.37-1_i386.deb
+
 update-repo
 
-install skype
 install vlc
 install nautilus-dropbox
 # fix dropbox the indicator issue

@@ -9,3 +9,6 @@ install p7zip
 install p7zip-rar
 install virtualbox-4.3
 install screen
+
+# autostart guake
+sudo cp /usr/share/applications/guake.desktop /etc/xdg/autostart/

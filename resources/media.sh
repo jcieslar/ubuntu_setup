@@ -12,6 +12,7 @@ add-key "https://dl-ssl.google.com/linux/linux_signing_key.pub" google-chrome-st
 if type spotify; then
   sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
 fi
+sudo add-apt-repository ppa:atareao/atareao
 
 update-repo
 
@@ -52,6 +53,9 @@ wget -q -O - https://fixubuntu.com/fixubuntu.sh | bash
 install pipelight-multi
 sudo pipelight-plugin --enable silverlight
 sudo pipelight-plugin --enable widevine
+
+# pushbullet
+install pushbullet-indicator
 
 # http://www.webupd8.org/2014/04/10-things-to-do-after-installing-ubuntu.html
 # http://itsfoss.com/things-to-do-after-installing-ubuntu-14-04/

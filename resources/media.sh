@@ -13,6 +13,7 @@ if type spotify; then
   sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 94558F59
 fi
 sudo add-apt-repository ppa:atareao/atareao
+sudo add-apt-repository ppa:kazam-team/stable-series
 
 update-repo
 
@@ -56,6 +57,9 @@ sudo pipelight-plugin --enable widevine
 
 # pushbullet
 install pushbullet-indicator
+
+# kazam for screencast
+install kazam
 
 # http://www.webupd8.org/2014/04/10-things-to-do-after-installing-ubuntu.html
 # http://itsfoss.com/things-to-do-after-installing-ubuntu-14-04/

@@ -14,6 +14,7 @@ if type spotify; then
 fi
 sudo add-apt-repository ppa:atareao/atareao
 sudo add-apt-repository ppa:kazam-team/stable-series
+sudo add-apt-repository ppa:fingerprint/fprint
 
 update-repo
 
@@ -60,6 +61,9 @@ install pushbullet-indicator
 
 # kazam for screencast
 install kazam
+
+# fingerprint
+sudo apt-get install libfprint0 fprint-demo libpam-fprintd gksu-polkit
 
 # http://www.webupd8.org/2014/04/10-things-to-do-after-installing-ubuntu.html
 # http://itsfoss.com/things-to-do-after-installing-ubuntu-14-04/

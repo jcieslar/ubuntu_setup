@@ -10,6 +10,7 @@ install p7zip-rar
 install virtualbox-4.3
 install screen
 install gparted
+install tmux
 
 # autostart guake
 sudo cp /usr/share/applications/guake.desktop /etc/xdg/autostart/

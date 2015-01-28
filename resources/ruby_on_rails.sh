@@ -75,6 +75,10 @@ sudo ln -s /usr/local/share/phantomjs-1.9.7-linux-x86_64/bin/phantomjs /usr/bin/
 cd
 
 # prax like a pow
-# sudo git clone git://github.com/ysbaddaden/prax.git /opt/prax
-# cd /opt/prax/
-# ./bin/prax install
+sudo git clone git://github.com/ysbaddaden/prax.git /opt/prax
+cd /opt/prax/
+./bin/prax install
+cd ~/ubuntu_setup
+
+# heroku client
+wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh

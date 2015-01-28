@@ -21,7 +21,7 @@ install libmysqlclient-dev
 install postgresql-common
 install postgresql-9.3
 install libpq-dev
-install postgresql-contrib
+install postgresql-contrib-9.3
 install pgadmin3
 
 # redis TODO fix me

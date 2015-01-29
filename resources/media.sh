@@ -36,6 +36,7 @@ install hipchat
 install shutter
 install rar
 install google-chrome-stable
+install unity-webapps-common
 install unity-tweak-tool
 install ubuntu-restricted-extras
 install wine

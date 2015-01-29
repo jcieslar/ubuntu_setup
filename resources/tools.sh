@@ -14,3 +14,4 @@ install tmux
 
 # autostart guake
 sudo cp /usr/share/applications/guake.desktop /etc/xdg/autostart/
+sudo cp /usr/share/applications/terminator.desktop /etc/xdg/autostart/

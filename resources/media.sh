@@ -69,6 +69,7 @@ sudo apt-get install libfprint0 fprint-demo libpam-fprintd gksu-polkit
 # http://www.webupd8.org/2014/04/10-things-to-do-after-installing-ubuntu.html
 # http://itsfoss.com/things-to-do-after-installing-ubuntu-14-04/
 
-# autostart shutter
+# autostart
 sudo cp /usr/share/applications/terminator.desktop /etc/xdg/autostart/
 sudo cp /usr/share/applications/skype.desktop /etc/xdg/autostart/
+sudo cp /usr/share/applications/shutter.desktop /etc/xdg/autostart/

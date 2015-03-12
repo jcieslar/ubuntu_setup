@@ -11,6 +11,5 @@ if [ ! -d ~/dotfiles/ ]; then
   cd ~/dotfiles/bin
   ./install.sh
   cd ..
-  git submodule update --init --recursive
   source ~/.bashrc
 fi

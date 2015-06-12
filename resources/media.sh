@@ -15,6 +15,7 @@ fi
 sudo add-apt-repository ppa:atareao/atareao
 sudo add-apt-repository ppa:kazam-team/stable-series
 sudo add-apt-repository ppa:fingerprint/fprint
+sudo add-apt-repository ppa:team-xbmc/ppa
 
 update-repo
 
@@ -73,3 +74,7 @@ sudo apt-get install libfprint0 fprint-demo libpam-fprintd gksu-polkit
 sudo cp /usr/share/applications/terminator.desktop /etc/xdg/autostart/
 sudo cp /usr/share/applications/skype.desktop /etc/xdg/autostart/
 sudo cp /usr/share/applications/shutter.desktop /etc/xdg/autostart/
+
+# xbmc
+sudo apt-get install python-software-properties pkg-config software-properties-common
+sudo apt-get install kodi

@@ -35,3 +35,5 @@ install mongodb-org
 sudo /etc/init.d/mongod restart
 # redis mongo and ngnix
 
+# sqlite3
+sudo apt-get install sqlite3 libsqlite3-dev

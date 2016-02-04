@@ -78,3 +78,8 @@ sudo cp /usr/share/applications/shutter.desktop /etc/xdg/autostart/
 # xbmc
 sudo apt-get install python-software-properties pkg-config software-properties-common
 sudo apt-get install kodi
+
+# Audio recording
+sudo apt-add-repository ppa:osmoma/audio-recorder
+sudo apt-get update
+sudo apt-get install audio-recorder
